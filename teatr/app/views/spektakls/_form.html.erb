@@ -1,29 +1,29 @@
-<%= form_for(@spektakl) do |f| %>
-  <% if @spektakl.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@spektakl.errors.count, "error") %> prohibited this spektakl from being saved:</h2>
+<%= form_for @spektakl, html: { class: 'form-horizontal' } do |f| %>
+ 
+	<label>Tytuł</label>
+		<div class="form-group">
+		<div class="col-md-10">
+		<%= f.text_field :tytul, class: 'text_field form-control' %>
+		</div>
+		 </div>
+  <label>Reżyser</label>
+		<div class="form-group">
+		<div class="col-md-10">
+		<%= f.text_field :rezyser, class: 'text_field form-control' %>
+  </div>
+   </div>
+   <label>Premiera</label>
+		<div class="form-group">
+		<div class="col-md-10">
+		<%= f.datetime_select :premiera, class: 'datetime_select form-control' %>
+  </div>
+   </div>
 
-      <ul>
-      <% @spektakl.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  
+     <div class='col-md-offset-2'>
+      <%= f.submit "Zatwierdź", class: 'btn btn-primary' %>
+      <%= link_to t('.cancel', default: t("Powrót do listy spektakli")),
+                  spektakls_path, class: 'btn btn-default' %>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :tytul %><br>
-    <%= f.text_field :tytul %>
-  </div>
-  <div class="field">
-    <%= f.label :rezyser %><br>
-    <%= f.text_field :rezyser %>
-  </div>
-  <div class="field">
-    <%= f.label :premiera %><br>
-    <%= f.datetime_select :premiera %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
