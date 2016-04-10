@@ -1,5 +1,6 @@
 class SpektaklsController < ApplicationController
-  before_action :set_spektakl, only: [:show, :edit, :update, :destroy]
+  #before_action :authenticate_user!
+ before_action :set_spektakl, only: [:show, :edit, :update, :destroy]
 
   # GET /spektakls
   # GET /spektakls.json

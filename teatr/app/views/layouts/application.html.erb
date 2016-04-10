@@ -27,8 +27,18 @@
   
   
     <ul class="nav navbar-nav navbar-right" align="right">
-	   <li class=""><a href="/"><%= t("Zarejestruj") %></a></li>
-		<li class=""><a href="/"><%= t("Zaloguj") %></a></li>
+	
+	  
+       
+       <% if user_signed_in? %>
+        
+         <li><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %></li>
+         
+       <% else %>
+        <li><%= link_to "Zarejestruj", new_user_registration_path %></li>
+         <li><%= link_to "Zaloguj", new_user_session_path %></li>
+       
+       <% end %>
 </ul>
 		
     
