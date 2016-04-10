@@ -1,0 +1,29 @@
+<%= form_for(@spektakl) do |f| %>
+  <% if @spektakl.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spektakl.errors.count, "error") %> prohibited this spektakl from being saved:</h2>
+
+      <ul>
+      <% @spektakl.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tytul %><br>
+    <%= f.text_field :tytul %>
+  </div>
+  <div class="field">
+    <%= f.label :rezyser %><br>
+    <%= f.text_field :rezyser %>
+  </div>
+  <div class="field">
+    <%= f.label :premiera %><br>
+    <%= f.datetime_select :premiera %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

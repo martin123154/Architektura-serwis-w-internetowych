@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160409142920) do
+ActiveRecord::Schema.define(version: 20160410103655) do
 
-  create_table "gists", force: :cascade do |t|
-    t.text     "src"
-    t.string   "lang"
-    t.string   "desc"
+  create_table "spektakls", force: :cascade do |t|
+    t.string   "tytul"
+    t.string   "rezyser"
+    t.datetime "premiera"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

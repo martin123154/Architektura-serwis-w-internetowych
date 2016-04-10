@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :spektakls
+  resources :przedstawienies
+  resources :przedstawienies
+  resources :gists
+  resources :gists
+  resources :gists
+  resources :gists
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,5 +62,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-    root 'gists#index'
+    root 'spektakls#index'
 end
