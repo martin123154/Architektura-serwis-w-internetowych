@@ -192,7 +192,7 @@ DEPENDENCIES
   faker (~> 1.6, >= 1.6.3)
   jbuilder (~> 2.0)
   jquery-rails
-  pg (= 0.18.4)
+  pg
   rails (= 4.2.6)
   rails_12factor (= 0.0.2)
   sass-rails (~> 5.0)
