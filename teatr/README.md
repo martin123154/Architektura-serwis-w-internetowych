@@ -1,8 +1,8 @@
 ### Nazwa Zespołu – Martin Zelek
 
 1. Zaliczenie:
- - [ ] [Baza teatru](zaliczenie)
- - [ ] [Aplikacja]
+ - [ ] [Baza teatru]()
+ - [ ] [Aplikacja](https://teatr-martin123154.c9users.io/)
 
 W plikach _README.md_ należy wpisać:
 

@@ -2,11 +2,12 @@ class SpektaklsController < ApplicationController
   #before_action :authenticate_user!
   #before_action :authenticate_user!, :except => [:index, :new,:show, :edit, :update, :destroy]
  before_action :set_spektakl, only: [:show, :edit, :update, :destroy]
+ before_filter :authenticate_user!, :except => [ :index, :show]
 
   # GET /spektakls
   # GET /spektakls.json
   def index
-    @spektakls = Spektakl.all
+   @spektakls = Spektakl.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /spektakls/1
