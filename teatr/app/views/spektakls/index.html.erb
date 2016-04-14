@@ -1,10 +1,20 @@
 <%- model_class = Spektakl -%>
 <div class="page-header">
 
-<h1>Lista Spektakli</h1> <%= link_to 'Dodaj nowy spektakl', new_spektakl_path, class: 'btn btn-default' %>
+<h1>Lista Spektakli</h1>
 
+
+ <% if user_signed_in? %>
+<li><%= link_to 'Dodaj nowy spektakl', new_spektakl_path, class: 'btn btn-default' %> </li>
+
+
+
+ <% else %>
+ <p class="a"> Zaloguj sie by dodać nowy spektakl! </p>
+<% end %>
 
 </div>
+
 <div class="table-responsive">
 <table class="table">
   <thead>
@@ -39,10 +49,18 @@
       </tr>
     <% end %>
   </tbody>
+      
+<%= form_tag(spektakls_path, :method => "get", id: "search-form") do %>
+
+			
+	<%= text_field_tag :search, params[:search],  class: "nav navbar-nav navbar-left", placeholder: "Szukaj spektakli" %>
+		<button type="submit"  class="navbar-left">szukaj!</button>
+		<% end %>
+	
+    
   </table>
     
-       
-    
+
 </div>
 
  <div class="text-center">

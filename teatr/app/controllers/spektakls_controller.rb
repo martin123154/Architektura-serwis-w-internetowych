@@ -7,8 +7,12 @@ class SpektaklsController < ApplicationController
   # GET /spektakls
   # GET /spektakls.json
   def index
+    if params[:search]
+				@spektakls = Spektakl.search(params[:search]).paginate(:page => params[:page], :per_page => 10)
+				else
    @spektakls = Spektakl.paginate(:page => params[:page], :per_page => 10)
   end
+end
 
   # GET /spektakls/1
   # GET /spektakls/1.json

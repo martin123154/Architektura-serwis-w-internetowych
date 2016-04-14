@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
  <body>
     <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
@@ -21,7 +22,10 @@
     <div class="collapse navbar-collapse" id="navbar-collapsable">
      <ul class="nav navbar-nav">
   <li><a href="/">Listuj spektakle</a></li>
+  <% if user_signed_in? %>
   <li><a href="/spektakls/new">Dodaj spektakl</a></li>
+  <% end %>
+
   
   </ul>
   
@@ -31,7 +35,7 @@
 	  
        
        <% if user_signed_in? %>
-        
+      <li>  <%= link_to 'Ustawienia konta', edit_user_registration_path %> </li>
          <li><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %></li>
          
        <% else %>
