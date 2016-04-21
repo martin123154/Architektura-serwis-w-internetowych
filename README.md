@@ -2,7 +2,7 @@
 
 1. Zaliczenie:
  - [ ] [Baza teatru]()
- - [ ] [Aplikacja](https://teatr-martin123154.c9users.io/)
+ - [ ] [Aplikacja](https://teatr2-martin123154.c9users.io)
 
 W plikach _README.md_ należy wpisać:
 
