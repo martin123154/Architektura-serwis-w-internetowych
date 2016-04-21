@@ -1,4 +1,17 @@
 <%= form_for @spektakl, html: { class: 'form-horizontal' } do |f| %>
+
+
+ <% if @spektakl.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spektakl.errors.count, "error") %> :</h2>
+
+      <ul>
+      <% @spektakl.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+      <% end %>
  
 	<label>Tytuł</label>
 		<div class="form-group">
