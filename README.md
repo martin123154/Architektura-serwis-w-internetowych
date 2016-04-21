@@ -2,7 +2,8 @@
 
 1. Zaliczenie:
  - [ ] [Baza teatru]()
- - [ ] [Aplikacja](https://teatr2-martin123154.c9users.io)
+ - [ ] [Aplikacja na c9](https://teatr2-martin123154.c9users.io)
+ - [ ] [Aplikacja na heroku](https://intense-hamlet-89946.herokuapp.com/)
 
 W plikach _README.md_ należy wpisać:
 
