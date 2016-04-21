@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :spektakls
-  resources :przedstawienies
-  resources :przedstawienies
-  resources :gists
-  resources :gists
-  resources :gists
-  resources :gists
-  get 'welcome/index'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -63,5 +55,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-    root 'spektakls#index'
+  root 'spektakls#index'
 end

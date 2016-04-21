@@ -1,10 +1,10 @@
 class SpektaklsController < ApplicationController
-  #before_action :authenticate_user!
+   #before_action :authenticate_user!
   #before_action :authenticate_user!, :except => [:index, :new,:show, :edit, :update, :destroy]
  before_action :set_spektakl, only: [:show, :edit, :update, :destroy]
  before_filter :authenticate_user!, :except => [ :index, :show]
 
-  # GET /spektakls
+    # GET /spektakls
   # GET /spektakls.json
   def index
     if params[:search]
@@ -35,7 +35,7 @@ end
 
     respond_to do |format|
       if @spektakl.save
-        format.html { redirect_to @spektakl, notice: 'Spektakl został utworzony' }
+        format.html { redirect_to @spektakl, notice: 'Spektakl was successfully created.' }
         format.json { render :show, status: :created, location: @spektakl }
       else
         format.html { render :new }

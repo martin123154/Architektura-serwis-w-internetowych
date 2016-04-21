@@ -1,17 +1,24 @@
-### Nazwa Zespołu – Martin Zelek
 
-1. Zaliczenie:
- - [ ] [Baza teatru]()
- - [ ] [Aplikacja](https://teatr-martin123154.c9users.io/)
+     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
+    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
+    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
+    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
+     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+    ----------------------------------------------------------------- 
 
-W plikach _README.md_ należy wpisać:
 
-* wersję języka Ruby (jakakolwiek wersja ~> 2.2)
-* jakiej użyto wersji Rails (tylko wersje ~> 4.2 lub ~> 5.0)
-* jakiej użyto bazy danych
+Welcome to your Rails project on Cloud9 IDE!
 
-|Wersja Ruby|Wersja Rails|Baza danych|
-|---|---|---|
-|2.2.4|4.2.6|SQLite|
+To get started, just do the following:
 
-Aplikacja zawiera baze przedstawień w teatrze
+1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
+2. Preview your new app by clicking on the URL that appears in the Run panel below (https://teatr2-martin123154.c9users.io/).
+
+Happy coding!
+The Cloud9 IDE team
+
+
+## Support & Documentation
+
+Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
+To watch some training videos, visit http://www.youtube.com/user/c9ide
